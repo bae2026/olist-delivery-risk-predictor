@@ -25,6 +25,8 @@ if st.button("Analyze Risk"):
     prediction = model.predict(input_scaled)
     probability = model.predict_proba(input_scaled)[0][1]
 
+    threshold = 0.3
+
     st.divider()
 
 
